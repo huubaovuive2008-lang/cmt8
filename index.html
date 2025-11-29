@@ -24,15 +24,9 @@
     h3{font-size:15px;margin:12px 0}
     p{color:#dbe9ff;margin:8px 0}
     ul{padding-left:18px}
-    .timeline{
-      border-left:2px dashed rgba(255,255,255,0.06);
-      padding:18px;
-      margin:12px 0;
-      background: linear-gradient(180deg, rgba(3,9,18,0.95), rgba(3,9,18,0.92));
-      border-radius:8px;
-      box-shadow: 0 8px 20px rgba(2,6,12,0.6), inset 0 1px 0 rgba(255,255,255,0.02);
-    }
-    .timeline div{margin:12px 0;color:#e6eef8;font-weight:600;font-size:15px}
+    /* Timeline: use card look so it appears "normal" like other sections */
+    .timeline{padding:12px 14px;margin:12px 0;background:linear-gradient(180deg, rgba(255,255,255,0.015), transparent);border-radius:8px;border:1px solid rgba(255,255,255,0.02)}
+    .timeline div{margin:10px 0;color:#dbe9ff;font-weight:500;font-size:15px}
     footer{padding:20px;text-align:center;color:var(--muted);font-size:13px}
     .controls{display:flex;gap:8px;flex-wrap:wrap}
     button{background:var(--accent);border:none;padding:8px 12px;border-radius:8px;color:#07203b;font-weight:600;cursor:pointer}
@@ -83,20 +77,20 @@
           <h2>Điều kiện bùng nổ</h2>
 <img src="https://tuyengiao.hagiang.gov.vn/upload/64711/fck/leminhtien.btgtu/Nhan%20dan%20ta%20vui%20mung%20phan%20khoi%20sau%20Cach%20mang%20Thang%208.jpg" class="section-img" style="width:100%;border-radius:10px;margin:10px 0;">
           <h3>Điều kiện chủ quan</h3>
-          <ul>
-            <li>Đảng đã chuẩn bị đường lối, phương pháp cách mạng (Hội nghị TƯ 8, 5/1941) — xác định nhiệm vụ giải phóng dân tộc lên hàng đầu, chủ trương khởi nghĩa vũ trang.</li>
-            <li>Lực lượng cách mạng (chính trị & vũ trang) được rèn luyện trong hơn 15 năm: các cao trào 1930-31, 1936-39 và cao trào kháng Nhật (1939-1945).</li>
-            <li>13/8/1945 thành lập Ủy ban khởi nghĩa toàn quốc, ban Quân lệnh số 1; Hội nghị Tân Trào (14-15/8) và Đại hội Quốc dân (16-17/8) thông qua chủ trương.</li>
-            <li>Quần chúng sẵn sàng; tầng lớp trung gian dao động rồi nghiêng về cách mạng; toàn Đảng, toàn dân sẵn sàng hành động.</li>
-          </ul>
+            <section id="timeline" class="card">
+              <h2>Timeline ngắn</h2>
 
-          <h3>Điều kiện khách quan</h3>
-          <ul>
-            <li>Diễn biến thế giới: Liên Xô tuyên chiến với Nhật (8/8/1945), Mỹ ném bom Hiroshima (6/8) & Nagasaki (9/8). Nhật Bản đầu hàng (15/8/1945) => quân Nhật ở Đông Dương rệu rã.</li>
-            <li>Thời cơ hạn hẹp: từ khi Nhật đầu hàng tới khi quân Đồng minh/trong đó có Pháp chuẩn bị vào giải giáp — thời cơ "ngàn năm có một".</li>
-            <li>Nguy cơ quân Đồng minh/Pháp quay lại càng thúc ép nhân dân hành động nhanh chóng.</li>
-          </ul>
-        </section>
+              <div class="timeline">
+                <div><strong>13/8/1945</strong> — Ủy ban khởi nghĩa toàn quốc; Quân lệnh số 1</div>
+                <div><strong>14–15/8/1945</strong> — Hội nghị Tân Trào</div>
+                <div><strong>16–17/8/1945</strong> — Đại hội Quốc dân; 10 chính sách Việt Minh</div>
+                <div><strong>18/8/1945</strong> — Nhiều tỉnh giành chính quyền sớm</div>
+                <div><strong>19/8/1945</strong> — Hà Nội giành chính quyền</div>
+                <div><strong>23/8/1945</strong> — Thừa Thiên–Huế giành chính quyền</div>
+                <div><strong>25/8/1945</strong> — Sài Gòn giành chính quyền</div>
+                <div><strong>30/8/1945</strong> — Vua Bảo Đại thoái vị</div>
+              </div>
+            </section>
 
         <section id="dienbien" class="card">
           <h2>Diễn biến chính</h2>
@@ -170,16 +164,16 @@
         <section id="timeline" class="card">
           <h2>Timeline ngắn</h2>
 
-          <div class="timeline">
-            <div><strong>13/8/1945</strong> — Ủy ban khởi nghĩa toàn quốc; Quân lệnh số 1</div>
-            <div><strong>14–15/8/1945</strong> — Hội nghị Tân Trào</div>
-            <div><strong>16–17/8/1945</strong> — Đại hội Quốc dân; 10 chính sách Việt Minh</div>
-            <div><strong>18/8/1945</strong> — Nhiều tỉnh giành chính quyền sớm</div>
-            <div><strong>19/8/1945</strong> — Hà Nội giành chính quyền</div>
-            <div><strong>23/8/1945</strong> — Thừa Thiên–Huế giành chính quyền</div>
-            <div><strong>25/8/1945</strong> — Sài Gòn giành chính quyền</div>
-            <div><strong>30/8/1945</strong> — Vua Bảo Đại thoái vị</div>
-          </div>
+          <pre>
+13/8/1945  - Ủy ban khởi nghĩa toàn quốc; Quân lệnh số 1
+14–15/8/1945 - Hội nghị Tân Trào
+16–17/8/1945 - Đại hội Quốc dân; 10 chính sách Việt Minh
+18/8/1945 - Nhiều tỉnh giành chính quyền sớm
+19/8/1945 - Hà Nội giành chính quyền
+23/8/1945 - Thừa Thiên–Huế giành chính quyền
+25/8/1945 - Sài Gòn giành chính quyền
+30/8/1945 - Vua Bảo Đại thoái vị
+          </pre>
         </section>
 
         <section id="tailieu" class="card">
